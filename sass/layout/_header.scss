@@ -1,0 +1,129 @@
+.page-header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.page-header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.page-header .container {
+    display: flex;
+    align-items: center;
+}
+
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    margin-left: 93px;
+}
+
+
+.nav__list .list-site__item+ .list-site__item {
+    margin-left: 50px;
+}
+
+.logo {
+    color:#000000;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    text-decoration: none;
+}
+.nav__logo {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.logo__first {
+    color: var(--accent-color);
+}
+
+
+.list-site__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color:var(--primary-text-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-fuction);
+}
+
+.list-site__link {
+    &:hover, &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.current {
+    color: var(--accent-color);
+    position: relative;
+}
+
+.current::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: var(--accent-color);
+
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+   
+}
+
+
+.list-auth {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.list-auth__item+ .list-auth__item {
+    margin-left: 50px;
+}
+
+.list-auth__link {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-fuction);
+}
+
+.list-auth__icon {
+    margin-right: 10px;
+    fill: none;
+    stroke: currentColor;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-fuction);
+}
+
+.list-auth__link {
+    &:hover, &:focus {
+        color: var(--accent-color);
+    }
+}
