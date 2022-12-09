@@ -66,7 +66,8 @@ img {
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-.menu__link__item:hover .picture__link__text {
+.menu__link__item:hover .picture__link__text,
+.menu__link__item:focus .picture__link__text {
     transform: translateY(0);
     opacity: 1;
 }
